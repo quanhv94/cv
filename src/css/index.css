@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
+a:hover, a:active {
+  outline: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #e6e7e9;
+  line-height: 1.4; }
+
+.page-wrapper {
+  background: #fff;
+  width: 900px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  display: flex; }
+
+.language-panel {
+  position: fixed;
+  z-index: 10;
+  top: 10px;
+  right: calc(50% - 550px); }
+  .language-panel img {
+    padding: 0 5px;
+    cursor: pointer; }
+
+@media (max-width: 1130px) {
+  .language-panel {
+    right: 10px; } }
+
+.sidebar {
+  background: #e0e1e3;
+  flex: 0 0 300px;
+  opacity: 0;
+  animation: fade-in 2s forwards; }
+  .sidebar .avatar img {
+    width: 100%;
+    animation: avatar 1s; }
+  .sidebar .phone, .sidebar .email, .sidebar .website {
+    padding: 20px;
+    color: #fff; }
+    .sidebar .phone div[class^=icon], .sidebar .email div[class^=icon], .sidebar .website div[class^=icon] {
+      display: inline;
+      margin-right: 30px;
+      vertical-align: middle;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      padding: 5px; }
+    .sidebar .phone a, .sidebar .email a, .sidebar .website a {
+      color: #fff;
+      text-decoration: none; }
+  .sidebar .phone {
+    background: #1c578f; }
+  .sidebar .email {
+    background: #1d6fb9; }
+  .sidebar .website {
+    background: #1c8cd8; }
+  .sidebar .module {
+    margin-top: 20px;
+    padding: 0 15px; }
+    .sidebar .module h3 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      text-transform: uppercase; }
+    .sidebar .module label:nth-child(2n) {
+      width: 105px;
+      display: inline-block;
+      position: relative;
+      margin-bottom: 15px; }
+    .sidebar .module label:nth-child(2n+1) {
+      width: calc(100% - 105px);
+      display: inline-block;
+      margin-bottom: 15px; }
+    .sidebar .module label.progress {
+      background: #aaa;
+      height: 8px;
+      margin: 0;
+      position: relative; }
+      .sidebar .module label.progress span {
+        display: inline-block;
+        height: 8px;
+        background: #1da1eb;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scale(0); }
+        .sidebar .module label.progress span.active {
+          animation: progress 2s forwards;
+          transform-origin: top left; }
+
+.content {
+  background: #fff;
+  padding-top: 30px;
+  padding-left: 30px;
+  flex: 1; }
+  .content .fullname {
+    font-size: 50px;
+    color: #1b9fea;
+    letter-spacing: 0.1em; }
+  .content .introduction {
+    white-space: pre-line; }
+  .content .career {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .content .module {
+    margin-top: 30px; }
+    .content .module h3 {
+      padding: 10px 20px;
+      margin-left: -30px;
+      background: #e0e0e2;
+      margin-bottom: 20px; }
+    .content .module .section {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex; }
+      .content .module .section .left {
+        flex: 0 0 143px; }
+        .content .module .section .left b {
+          display: block;
+          margin-bottom: 10px; }
+      .content .module .section .right {
+        flex: 1;
+        padding-left: 20px;
+        white-space: pre-line; }
+  .content .hobby {
+    flex: 0 0 115px;
+    text-align: center; }
+    .content .hobby + .hobby {
+      margin-left: 30px; }
+    .content .hobby img {
+      width: 100%;
+      margin-bottom: 10px; }
+  .content > * {
+    position: relative;
+    animation: fade-in 0.5s forwards;
+    opacity: 0; }
+  .content > *:nth-child(1n) {
+    animation-delay: 0.5s; }
+  .content > *:nth-child(2n) {
+    animation-delay: 1s; }
+  .content > *:nth-child(3n) {
+    animation-delay: 1.5s; }
+  .content > *:nth-child(4n) {
+    animation-delay: 2s; }
+  .content > *:nth-child(5n) {
+    animation-delay: 2.5s; }
+  .content > *:nth-child(6n) {
+    animation-delay: 3s; }
+  .content > *:nth-child(7n) {
+    animation-delay: 3.5s; }
+  .content > *:nth-child(8n) {
+    animation-delay: 4s; }
+  .content > *:nth-child(9n) {
+    animation-delay: 4.5s; }
+  .content > *:nth-child(10n) {
+    animation-delay: 5s; }
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    top: -20px; }
+  to {
+    opacity: 1;
+    top: 0; } }
+
+@keyframes avatar {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+
+@keyframes progress {
+  from {
+    transform: scaleX(0); }
+  to {
+    transform: scaleX(1); } }
