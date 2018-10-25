@@ -52,6 +52,8 @@ const Content = ({ t, i18n }) => (
         </div>
         <div className="right">
           {t('sachmem_c')}
+          <br/>
+          - Link: <a href="https://sachmem.vn" target="_blank" rel="noopener noreferrer">https://sachmem.vn</a>
         </div>
       </div>
       <div className="section">
@@ -88,6 +90,19 @@ const Content = ({ t, i18n }) => (
         </div>
         <div className="right">
           {t('online-exam_c')}
+          <br/>
+          - Link: <a href="https://dethionline-demo.herokuapp.com" target="_blank" rel="noopener noreferrer">https://dethionline-demo.herokuapp.com</a>
+        </div>
+      </div>
+      <div className="section">
+        <div className="left">
+          <b>Talk to Stranger</b>
+          <div>2018-2018</div>
+        </div>
+        <div className="right">
+          {t('talk-to-stranger_c')}
+          <br/>
+          - Link: <a href="http://talk-to-stranger-demo.herokuapp.com/" target="_blank" rel="noopener noreferrer">http://talk-to-stranger-demo.herokuapp.com/</a>
         </div>
       </div>
     </div>

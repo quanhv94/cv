@@ -32,6 +32,7 @@ i18n
           'tms_c': '- Description: Employee management system\n- Technology: PHP(Laravel), MySQL, ReactJS\n- Responsibility: Front-end development',
           'bdr_c': '- Description: Restaurant booking website\n- Technology: Java, ReactJS\n- Responsibility: Front-end development',
           'online-exam_c': '- Description: A software for online examination\n- Technology: NodeJS, MongoDB, ReactJS\n- Responsibility: Analysis and design, development\n- Side project',
+          'talk-to-stranger_c': '- Description: A chat application to talk to random user\n- Technology: NodeJS, Socket.io, ReactJS\n- Responsibility: Analysis and design, development\n- Side project',
 
           'hobbies': 'HOBBIES',
           'travelling': 'Travelling',
@@ -69,6 +70,7 @@ i18n
           'tms_c': '- Mô tả: Phần mềm quản lý nhân viên và chấm công\n- Công nghệ: PHP(Laravel), MySQL, ReactJS\n- Vị trí: Lập trình viên front-end',
           'bdr_c': '- Mô tả: Phần mềm đặt bàn online cho nhà hàng\n- Công nghệ: Java, ReactJS\n- Vị trí:  Lập trình viên front-end',
           'online-exam_c': '- Mô tả: Phần mềm làm bài thi trắc nghiệm\n- Công nghệ: NodeJS, MongoDB, ReactJS\n- Vị trí: Phân tích thiết kế, lập trình\n- Dự án cá nhân',
+          'talk-to-stranger_c': '- Mô tả: Ứng dụng chat ngẫu nhiên\n- Công nghệ: NodeJS, Socket.io, ReactJS\n- Vị trí: Phân tích thiết kế, lập trình\n- Dự án cá nhân',
 
           'hobbies': 'SỞ THÍCH',
           'travelling': 'Du lịch',
