@@ -48,7 +48,7 @@ const Sidebar = ({ t }) => (
       </label>
       <label>Node.js</label>
       <label className="progress">
-        <span style={{ width: '70%' }}></span>
+        <span style={{ width: '60%' }}></span>
       </label>
       <label>Javascript</label>
       <label className="progress">
