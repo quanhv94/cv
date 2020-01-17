@@ -42,13 +42,9 @@ const Sidebar = ({ t }) => (
     </div>
     <div className="module">
       <h3>{t('skill')}</h3>
-      <label>Ruby</label>
-      <label className="progress">
-        <span style={{ width: '70%' }}></span>
-      </label>
       <label>Node.js</label>
       <label className="progress">
-        <span style={{ width: '60%' }}></span>
+        <span style={{ width: '70%' }}></span>
       </label>
       <label>Javascript</label>
       <label className="progress">
@@ -72,7 +68,7 @@ const Sidebar = ({ t }) => (
       </label>
       <label>MongoDB</label>
       <label className="progress">
-        <span style={{ width: '50%' }}></span>
+        <span style={{ width: '70%' }}></span>
       </label>
     </div>
     <div className="module">

@@ -1,6 +1,6 @@
 import React from 'react'
 import { translate } from 'react-i18next';
-import travelling from './../img/travelling.png';
+import traveling from './../img/traveling.png';
 import music from './../img/music.png';
 import gaming from './../img/gaming.png';
 
@@ -35,11 +35,20 @@ const Content = ({ t, i18n }) => (
       </div>
       <div className="section">
         <div className="left">
-          <b>HBLab jsc</b>
+          <b>HBLab JSC</b>
           <div>2017-2018</div>
         </div>
         <div className="right">
           {t('hblab_c')}
+        </div>
+      </div>
+      <div className="section">
+        <div className="left">
+          <b>Rabita JSC</b>
+          <div>2019-{t('now')}</div>
+        </div>
+        <div className="right">
+          {t('rabita_c')}
         </div>
       </div>
     </div>
@@ -52,7 +61,7 @@ const Content = ({ t, i18n }) => (
         </div>
         <div className="right">
           {t('sachmem_c')}
-          <br/>
+          <br />
           - Link: <a href="https://sachmem.vn" target="_blank" rel="noopener noreferrer">https://sachmem.vn</a>
         </div>
       </div>
@@ -68,7 +77,7 @@ const Content = ({ t, i18n }) => (
       <div className="section">
         <div className="left">
           <b>TMS</b>
-          <div>2018-2018</div>
+          <div>2018</div>
         </div>
         <div className="right">
           {t('tms_c')}
@@ -77,7 +86,7 @@ const Content = ({ t, i18n }) => (
       <div className="section">
         <div className="left">
           <b>BDR</b>
-          <div>2018-2018</div>
+          <div>2018</div>
         </div>
         <div className="right">
           {t('bdr_c')}
@@ -86,23 +95,41 @@ const Content = ({ t, i18n }) => (
       <div className="section">
         <div className="left">
           <b>Online Examination</b>
-          <div>2018-2018</div>
+          <div>2018</div>
         </div>
         <div className="right">
           {t('online-exam_c')}
-          <br/>
+          <br />
           - Link: <a href="https://dethionline-demo.herokuapp.com" target="_blank" rel="noopener noreferrer">https://dethionline-demo.herokuapp.com</a>
         </div>
       </div>
       <div className="section">
         <div className="left">
           <b>Talk to Stranger</b>
-          <div>2018-2018</div>
+          <div>2018</div>
         </div>
         <div className="right">
           {t('talk-to-stranger_c')}
-          <br/>
+          <br />
           - Link: <a href="http://talk-to-stranger-demo.herokuapp.com/" target="_blank" rel="noopener noreferrer">http://talk-to-stranger-demo.herokuapp.com/</a>
+        </div>
+      </div>
+      <div className="section">
+        <div className="left">
+          <b>RabiDO</b>
+          <div>2019</div>
+        </div>
+        <div className="right">
+          {t('rabido_c')}
+        </div>
+      </div>
+      <div className="section">
+        <div className="left">
+          <b>E-School</b>
+          <div>2019</div>
+        </div>
+        <div className="right">
+          {t('eschool_c')}
         </div>
       </div>
     </div>
@@ -110,8 +137,8 @@ const Content = ({ t, i18n }) => (
       <h3>{t('hobbies')}</h3>
       <div className="section">
         <div className="hobby">
-          <img src={travelling} alt="travelling" />
-          {t('travelling')}
+          <img src={traveling} alt="traveling" />
+          {t('traveling')}
         </div>
         <div className="hobby">
           <img src={music} alt="music" />
