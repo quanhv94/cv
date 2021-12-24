@@ -87,7 +87,7 @@ export default function Content() {
           </div>
           <div className="right">{t('bdr_c')}</div>
         </div> */}
-        <div className="section">
+        {/* <div className="section">
           <div className="left">
             <b>Online Examination</b>
             <div>2018</div>
@@ -99,7 +99,7 @@ export default function Content() {
               https://dethionline-demo.herokuapp.com
             </a>
           </div>
-        </div>
+        </div> */}
         <div className="section">
           <div className="left">
             <b>Talk to Stranger</b>

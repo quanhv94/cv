@@ -59,6 +59,10 @@ export default function Sidebar() {
         <label className="progress">
           <span style={{ width: '80%' }}></span>
         </label>
+        <label>ReactJS</label>
+        <label className="progress">
+          <span style={{ width: '80%' }}></span>
+        </label>
         <label>jQuery</label>
         <label className="progress">
           <span style={{ width: '70%' }}></span>
